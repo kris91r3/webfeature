@@ -12,12 +12,18 @@
     />
     <title>Uperfekt perfekt</title>
   </head>
-  <body class="bg-darkblue">
+  <body class="bg-gradient-to-b from-black to-darkblue">
     <section>
-      <div>
-        <h1 class="text-white">Uperfekt er perfekt</h1>
-        <video autoplay loop muted class="">
+      <div class="relative">
+        <h1
+          class="absolute top-8 left-8 text-5xl text-white drop-shadow-lg md:m-10 md:text-7xl xl:text-9xl"
+        >
+          Uperfekt <br />
+          er perfekt
+        </h1>
+        <video autoplay loop controls muted class="">
           <source src="splashvideo.webm" type="video/webm" />
+          <source src="splashvideo.mp4" type="video/mp4" />
         </video>
       </div>
     </section>
@@ -131,7 +137,15 @@
     </section>
 
     <section>
-      <video src=""></video>
+      <div class="grid">
+        <video autoplay loop class="place-self-center">
+          <source src="Ennybegyndelse.webm" type="video/webm" />
+          <img
+            src="billeder/overskrift.jpg"
+            title="Browser does not support webm"
+          />
+        </video>
+      </div>
       <div>
         <p>
           Men Pierre er glad for sin beslutning. Indkomsten er lavere nu, men
