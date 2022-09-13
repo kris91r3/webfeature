@@ -13,6 +13,9 @@
     <title>Uperfekt perfekt</title>
   </head>
   <body class="bg-gradient-to-b from-black to-darkblue">
+    <div
+      class="progress-bar fixed left-0 top-0 right-0 h-4 w-full origin-top-left bg-white"
+    ></div>
     <section>
       <div class="relative">
         <h1
@@ -27,10 +30,10 @@
         </video>
       </div>
     </section>
-    <section>
-      <div>
-        <h2>Pierre Falcke</h2>
-        <div>
+    <section class="">
+      <div class="m-10 md:m-16">
+        <h2 class="place-items-center pb-10 pt-10 text-white">Pierre Falcke</h2>
+        <div class="gap-6 md:grid md:grid-cols-2 md:gap-24">
           <p>
             Pierre Falcke. Du ved formentligt ikke hvem han er. Men indtil for
             kort tid siden, så du hans værker et par gange om dagen, hver dag,
@@ -39,35 +42,61 @@
             Pierre kunne ikke drømme om at bruge sine egne fotos - faktisk kan
             han ikke fordrage sit eget arbejde.
           </p>
-          <img src="billeder/pierre.webp" alt="" />
+          <img
+            class="pt-10 pb-10 md:pt-0 md:pb-0"
+            src="billeder/pierre.webp"
+            alt="Billede af Pierre"
+          />
         </div>
       </div>
 
-      <div>
-        <h3>Pierre sælger 2 millioner fotos om året</h3>
-        <h3>Det svarer til én fotolicens hvert 16. sekund</h3>
-        <h3>Du ser hans fotos ca. 2 gange om dagen</h3>
-      </div>
-      <div>
-        <img src="billeder/lomo-smena-17.webp" alt="" />
+      <div class="m-10">
+        <h4 class="mb-10 bg-grey p-3 text-center text-white">
+          Pierre sælger 2 millioner fotos om året
+        </h4>
+        <h4 class="mb-10 bg-grey p-3 text-center text-white">
+          Det svarer til én fotolicens hvert 16. sekund
+        </h4>
+        <h4 class="mb-20 bg-grey p-3 text-center text-white">
+          Du ser hans fotos ca. 2 gange om dagen
+        </h4>
       </div>
     </section>
     <section>
-      <h2>Hvad er stock-fotos?</h2>
-      <div>
-        <p>
+      <div class="w-100 sticky top-0 flex items-center">
+        <img
+          class="h-screen lg:w-screen"
+          src="billeder/lomo-smena-17.webp"
+          alt=""
+        />
+        <h2
+          class="absolute top-20 ml-10 mr-10 md:top-40 md:ml-16 md:mr-32 lg:top-28"
+        >
+          Hvad er stock-fotos?
+        </h2>
+        <p
+          class="absolute ml-10 mr-10 -mt-72 bg-white p-7 md:ml-40 md:mr-40 md:p-14 lg:mt-8 lg:ml-96 lg:mr-96"
+        >
           Stock-fotos er billeder, der kan købes fra et foto-website. De bruges
           af aviser, til markedsføring og som indhold på websites. En licens til
           at bruge et foto koster typisk mellem 10 og 100 kroner, alt afhængig
           af hvad de skal bruges til.
         </p>
-        <p>
+      </div>
+      <div class="w-100 sticky top-0 flex h-screen items-center">
+        <p
+          class="absolute ml-10 mr-10 -mt-72 bg-white p-7 md:ml-40 md:mr-40 md:p-14 lg:mt-8 lg:ml-96 lg:mr-96"
+        >
           Stock-fotos bliver ofte kritiseret for at være uden sjæl - det er de
           der billeder af en læge i hvid kittel med stetoskop om halsen på en
           meget hvid baggrund eller en meget glad dame fra virksomhedens salgs-
           eller supportafdeling.
         </p>
-        <p>
+      </div>
+      <div class="w-100 sticky top-0 flex h-screen items-center">
+        <p
+          class="absolute ml-10 mr-10 -mt-72 bg-white p-7 md:ml-40 md:mr-40 md:p-14 lg:mt-8 lg:ml-96 lg:mr-96"
+        >
           Stock-fotos har eksisteret i mange år. Før branchen blev digital,
           tilbød stock-foto virksomhederne billedmapper, der kunne bestilles
           fra. Men stock-foto branchen var én af de tidlige til at blive fuldt
@@ -75,6 +104,7 @@
         </p>
       </div>
     </section>
+
     <section>
       <h2>Pierres berømmelse</h2>
       <p>
@@ -146,9 +176,9 @@
           />
         </video>
       </div>
-      <div class="relative m-10">
+      <div class="relative m-10 p-2">
         <div>
-          <p class="my-16 text-white lg:mx-72">
+          <p class="my-32 text-white lg:mx-80">
             Men Pierre er glad for sin beslutning. Indkomsten er lavere nu, men
             han har stadig lidt penge på kontoen, og studerer nu
             kunstfotografering på fotoskolen Fatamorgana. Han glæder sig over
@@ -157,7 +187,7 @@
           </p>
         </div>
 
-        <div class="my-16 lg:mx-48">
+        <div class="my-32 lg:mx-48">
           <img src="billeder/citat_top.svg" alt="citationstegn_top" />
           <h3 class="text-white">
             Det interessante ligger i fejlen. Et foto med masser af fejl er
@@ -165,14 +195,14 @@
             visuelle udtryk. Det uperfekte er perfekt.
           </h3>
           <img
-            class="absolute right-48"
+            class="absolute right-52"
             src="billeder/citat_bottom.svg"
             alt="citationstegn_bottom"
           />
         </div>
 
         <div>
-          <p class="mx-72 my-16 text-white">
+          <p class="my-32 text-white lg:mx-80">
             Karrieren begynder også så småt også at gå den rette vej: Pierre er
             begyndt at sælge fotokunst på nettet, og har udgivet sin første
             foto-bog med titlen “Lidt i fem,” som er en fotografisk odyssé om at
@@ -181,52 +211,66 @@
             Biblioteks fotoudstilling. Som Pierre forklarer det:
           </p>
         </div>
-        <div class="mx-48 my-16">
+        <div class="my-32 lg:mx-48">
           <img src="billeder/citat_top.svg" alt="citationstegn_top" />
           <h3 class="text-white">
             Nu kan jeg leve livet igen. Jeg føler mig frisk. Jeg føler mig fri.
             Jeg føler mig genfødt.
           </h3>
           <img
-            class="absolute right-48"
+            class="absolute right-52"
             src="billeder/citat_bottom.svg"
             alt="citationstegn_bottom"
           />
         </div>
       </div>
     </section>
-    <section>
+
+    <section class="m-10 mt-28 lg:m-52">
       <h2 class="text-white">Analog fotografering</h2>
-      <div>
-        <p>
+      <div class="mt-10 text-white lg:grid lg:grid-cols-2 lg:gap-20">
+        <p class="textinview">
           Fotografering med gode, gammeldags filmruller. Analog fotografering
           stiger for tiden i popularitet, specielt blandt unge, og prisen på
           filmruller og vintage-kameraer skyder i vejret. Mange fotografer synes
-          at film-fotografering er mere ægte har mere “sjæl.” Analog
-          fotografering er langsommmere, hvert enkelt billede koster penge, og
-          man bliver nødt til at overveje motiv og lys grundigere før der skydes
-          - tænk før du trykker. Analog fotografering kan gå galt mange steder i
-          processen, og det giver også mulighed for at eksperimentere med “det
-          uperfekte og uforudsigelige i processen.” Man kan f.eks. skyde på for
-          gamle filmruller, arbejde med forskellige teknikker som “lens
-          whacking” og filtre/ting foran objektivet, og man kan pille ved de
-          kemiske processer under fremkaldelse af filmen.
+          at film-fotografering er mere ægte har mere “sjæl.” <br />
+          <br />
+          Analog fotografering er langsommmere, hvert enkelt billede koster
+          penge, og man bliver nødt til at overveje motiv og lys grundigere før
+          der skydes - tænk før du trykker. Analog fotografering kan gå galt
+          mange steder i processen, og det giver også mulighed for at
+          eksperimentere med “det uperfekte og uforudsigelige i processen.” Man
+          kan f.eks. skyde på for gamle filmruller, arbejde med forskellige
+          teknikker som “lens whacking” og filtre/ting foran objektivet, og man
+          kan pille ved de kemiske processer under fremkaldelse af filmen.
         </p>
-        <img src="billeder/polaroid_1.webp" alt="" />
+        <div class="rotate-3">
+          <img
+            src="billeder/polaroid_1.webp"
+            class="billedeview mt-5 p-10 lg:mt-0 lg:max-w-sm lg:grid-cols-2"
+            alt=""
+          />
+        </div>
       </div>
-      <h2>Glitch art</h2>
-      <div>
-        <p>
+      <h2 class="mt-5 text-white lg:mt-10">Glitch art</h2>
+      <div class="mt-10 text-white lg:grid lg:grid-cols-2 lg:gap-20">
+        <p class="textinview">
           Når der sker en teknisk fejl i et medie/en kommunikationskanal kaldes
           det en glitch. Glitch art går ud på at dyrke fejlene for at skabe
           kunst. En meget typisk glitch er små analoge eller digitale fejl i
           farvegengivelsen af billeder.
         </p>
-        <img src="billeder/polaroid_3.webp" alt="" />
+        <div class="-rotate-3">
+          <img
+            src="billeder/polaroid_3.webp"
+            class="billedeview mt-5 p-10 lg:mt-0 lg:max-w-sm lg:grid-cols-2"
+            alt=""
+          />
+        </div>
       </div>
-      <h2>Lomografi</h2>
-      <div>
-        <p>
+      <h2 class="mt-5 text-white lg:mt-10">Lomografi</h2>
+      <div class="mt-10 text-white lg:grid lg:grid-cols-2 lg:gap-20">
+        <p class="textinview">
           Et lomografi er egentlig bare et fotografi skudt uden videre omtanke,
           og med noget foto-udstyr af ret alternativ kvalitet. Lomografier
           skydes ofte på gode, gammeldags filmruller, men kan også skyde
@@ -234,36 +278,50 @@
           foto-entusiaster dyrker den slags, og ser det som en foto-genre eller
           endda en livsstil.
         </p>
-        <img src="billeder/polaroid_2.webp" alt="" />
+        <div class="-rotate-3">
+          <img
+            src="billeder/polaroid_2.webp"
+            class="billedeview mt-5 p-10 lg:mt-0 lg:max-w-sm lg:grid-cols-2"
+            alt=""
+          />
+        </div>
       </div>
       <div>
-        <h3>Lomo-regler</h3>
-        <p>
+        <h3 class="mt-5 text-white">Lomo-regler</h3>
+        <p class="mt-5 text-white">
           Der er et stort community af lomografer på Lomography.com, og hardcore
           lomografer har 10 regler, de lever efter:
         </p>
-        <div>
-          <ul>
-            <li>1. Tag kameraet med overalt</li>
+        <div class="lg:bg-slate-50 mt-5 lg:m-24 lg:mt-10 lg:flex">
+          <ul class="typewriter justify-center text-white lg:ml-8 lg:p-10">
+            <li class="">1. Tag kameraet med overalt</li>
+            <br />
             <li>2. Brug det på alle tidspunkter – dag og nat</li>
+            <br />
             <li>
               3. Lomografi er ikke en forstyrrelse af dit liv, men en del af det
             </li>
+            <br />
             <li>4. Prøv hofteskuddet!</li>
+            <br />
             <li>5. Gå tæt på de objekter du har et ønske om at lomografere</li>
+            <br />
             <li>6. Tænk ikke (William Firebrace)</li>
+            <br />
             <li>7. Vær hurtig</li>
+            <br />
             <li>
               8. Du behøver ikke at vide hvad du fanger på film på forhånd
             </li>
+            <br />
             <li>9. Heller ikke efter</li>
+            <br />
             <li>10. Du skal ikke bekymre dig om nogen regler</li>
           </ul>
-          <h3>Det uperfekte er perfekt</h3>
+          <video src=""></video>
         </div>
       </div>
     </section>
-
     <script type="module" src="./main.js"></script>
   </body>
 </html>
