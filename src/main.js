@@ -63,37 +63,45 @@ if (window.innerWidth > 760) {
     };
   });
 
-  // stagger liste elementet, så de fader ind og kommer ind fra siden
-  // overskriften h4
-  inView(".staggeranimation", ({ target }) => {
-    animate(
-      target.querySelectorAll("h4"),
-      { opacity: [0, 1] },
-      {
-        duration: 1,
-        delay: stagger(1, { start: 0.25 }),
-      }
-    );
-    return () => {
-      animate(target, { opacity: [0, 1] }, { duration: 2 });
-    };
-  });
+  //   lyd på billeder
+  document.querySelector(".lyd1").addEventListener("click", callBackfunktion);
 
-  // img elementer
-  inView(".staggeranimation", ({ target }) => {
-    animate(
-      target.querySelectorAll("img"),
-      { opacity: [0, 1] },
-      {
-        duration: 3,
-        delay: stagger(0.3, { start: 0.3 }),
-      }
-    );
-    return () => {
-      animate(target, { opacity: [0, 1] }, { duration: 2 });
-    };
-  });
+  function callBackfunktion() {
+    console.log("callbackfunktion");
+    document.querySelector("#swooshlyd").play();
+  }
 }
+
+// stagger liste elementet, så de fader ind og kommer ind fra siden
+// overskriften h4
+inView(".staggeranimation", ({ target }) => {
+  animate(
+    target.querySelectorAll("h4"),
+    { opacity: [0, 1] },
+    {
+      duration: 1,
+      delay: stagger(0.8, { start: 0.25 }),
+    }
+  );
+  return () => {
+    animate(target, { opacity: [0, 1] }, { duration: 2 });
+  };
+});
+
+// img elementer
+inView(".staggeranimation", ({ target }) => {
+  animate(
+    target.querySelectorAll("img"),
+    { opacity: [0, 1] },
+    {
+      duration: 3,
+      delay: stagger(0.4, { start: 0.6 }),
+    }
+  );
+  return () => {
+    animate(target, { opacity: [0, 1] }, { duration: 2 });
+  };
+});
 
 /* animationer på mobil */
 if (window.innerWidth <= 760) {
@@ -101,3 +109,9 @@ if (window.innerWidth <= 760) {
 
 // røde bjæke i toppen
 scroll(animate(".progress-bar", { scaleX: [0, 1] }));
+
+// animate(
+//   [a, b, c],
+//   { x: 100 },
+//   { delay: stagger(0.1, { from: "last" }) } // 0.2, 0.1, 0
+// );
