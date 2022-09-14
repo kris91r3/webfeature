@@ -7,8 +7,13 @@ module.exports = {
       white: "#ffffff",
       black: "#000002",
       grey: "#1d1e22",
+      orange: "#FB7B33",
     },
-    extend: {},
+    extend: {
+      dropShadow: {
+        "3xl": "0 2px 2px rgba(0, 0, 0, 0.20)",
+      },
+    },
   },
   plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms")],
 };

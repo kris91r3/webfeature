@@ -16,7 +16,7 @@
     <!-- progress-baren -->
 
     <div
-      class="progress-bar fixed left-0 top-0 right-0 h-4 w-full origin-top-left bg-white"
+      class="progress-bar fixed left-0 top-0 right-0 h-3 w-full origin-top-left bg-orange opacity-60"
     ></div>
 
     <!-- Section 1 video + h1 -->
@@ -24,7 +24,7 @@
     <section>
       <div class="relative">
         <h1
-          class="absolute top-8 left-8 text-5xl text-white drop-shadow-lg md:m-10 md:text-7xl xl:text-9xl"
+          class="absolute top-8 left-10 text-5xl text-white drop-shadow-lg md:m-10 md:text-7xl xl:text-9xl"
         >
           Uperfekt <br />
           er perfekt
@@ -57,14 +57,27 @@
           />
         </div>
       </div>
-      <div>
-        <h4 class="mt-10 bg-grey p-3 text-center text-white">
+      <!-- faktabokse med stagger -->
+      <div class="staggeranimation">
+        <h4 class="mt-10 bg-grey p-3 text-center text-white lg:p-12">
           Pierre sælger 2 millioner fotos om året
         </h4>
-        <h4 class="mt-10 bg-grey p-3 text-center text-white">
+
+        <img
+          src="kamera_svg/kamera_2.svg"
+          class="hidden lg:absolute lg:left-40 lg:block lg:max-w-sm lg:-rotate-6"
+          alt=""
+        />
+
+        <h4 class="mt-10 bg-grey p-3 text-center text-white lg:p-12">
           Det svarer til én fotolicens hvert 16. sekund
         </h4>
-        <h4 class="mt-10 bg-grey p-3 text-center text-white">
+        <img
+          src="kamera_svg/kamera_1.svg"
+          class="top-95 absolute right-40 hidden max-w-sm rotate-12 lg:block"
+          alt=""
+        />
+        <h4 class="mt-10 bg-grey p-3 text-center text-white lg:p-12">
           Du ser hans fotos ca. 2 gange om dagen
         </h4>
       </div>
@@ -79,21 +92,23 @@
           src="billeder/lomo-smena-17.webp"
           alt="baggrundsbillede1"
         />
-        <h2 class="absolute top-10 mx-10 md:top-20 md:ml-16 md:mr-32">
+        <h2 class="absolute top-10 mx-10 md:top-20 md:mx-16">
           Hvad er stock-fotos?
         </h2>
         <p
-          class="absolute mx-10 mt-10 bg-white p-10 font-semibold leading-8 sm:p-14 md:mx-24 md:mt-64 md:py-24 lg:mx-64 lg:py-32 xl:mx-96"
+          class="absolute mx-10 mt-10 bg-white p-10 font-semibold leading-8 drop-shadow-3xl sm:p-14 md:mx-24 md:mt-48 md:py-24 md:px-20 lg:mx-64 lg:py-36 lg:px-28 xl:mx-96"
         >
-          Stock-fotos er billeder, der kan købes fra et foto-website. De bruges
-          af aviser, til markedsføring og som indhold på websites. En licens til
-          at bruge et foto koster typisk mellem 10 og 100 kroner, alt afhængig
-          af hvad de skal bruges til.
+          "mx-10 mt-10 bg-white p-10 font-semibold leading-8 drop-shadow-3xl
+          sm:p-14 md:py-24 md:px-20 lg:mx-64 lg:px-28 xl:mx-96" Stock-fotos er
+          billeder, der kan købes fra et foto-website. De bruges af aviser, til
+          markedsføring og som indhold på websites. En licens til at bruge et
+          foto koster typisk mellem 10 og 100 kroner, alt afhængig af hvad de
+          skal bruges til.
         </p>
       </div>
       <div class="w-100 sticky top-0 flex h-screen items-center">
         <p
-          class="absolute mx-10 mt-10 bg-white p-10 font-semibold leading-8 sm:p-14 md:mx-24 md:mt-64 md:py-24 lg:mx-64 lg:py-32 xl:mx-96"
+          class="absolute mx-10 mt-10 bg-white p-10 font-semibold leading-8 drop-shadow-3xl sm:p-14 md:mx-24 md:mt-48 md:py-24 md:px-20 lg:mx-64 lg:py-36 lg:px-28 xl:mx-96"
         >
           Stock-fotos bliver ofte kritiseret for at være uden sjæl - det er de
           der billeder af en læge i hvid kittel med stetoskop om halsen på en
@@ -103,7 +118,7 @@
       </div>
       <div class="w-100 sticky top-0 flex h-screen items-center">
         <p
-          class="absolute mx-10 mt-10 bg-white p-10 font-semibold leading-8 sm:p-14 md:mx-24 md:mt-64 md:py-24 lg:mx-64 lg:py-32 xl:mx-96"
+          class="absolute mx-10 mt-10 bg-white p-10 font-semibold leading-8 drop-shadow-3xl sm:p-14 md:mx-24 md:mt-48 md:py-24 md:px-20 lg:mx-64 lg:py-36 lg:px-28 xl:mx-96"
         >
           Stock-fotos har eksisteret i mange år. Før branchen blev digital,
           tilbød stock-foto virksomhederne billedmapper, der kunne bestilles
@@ -115,70 +130,112 @@
 
     <!-- Section 4 tekst og "gamle stockfotos" -->
 
-    <section>
-      <h2 class="">Pierres berømmelse</h2>
-      <p>
+    <section class="m-10 p-2">
+      <h2 class="my-20 text-white md:mx-24 lg:mx-60">Pierres berømmelse</h2>
+      <p class="mt-10 text-white md:mx-24 lg:mx-64 xl:mx-96">
         Pierres interesse for foto startede som ganske ung - som 10-årig fik han
         sin fars gamle Rollei-kamera, og begyndte at skyde løs. Det var før den
         digitale revolution, så alle Pierres lommepenge blev brugt på filmruller
         og fremkaldelse af film. Pierre fortsatte med at fotografere på film op
-        gennem gymnasietiden. Pierre over til digital fotografering i starten af
-        2000’erne, da han begyndte at studere fotografisk kommunikation på DMJX.
-        Her åbnede en ny verden sig: Reklamefotografering i studie, lyssætning
-        og manipulering af billeder i Photoshop blev hans nye stil. På det
-        tidspunkt var stock-foto industrien i starten af en revolution: De
-        første online stock-foto websites begyndte at komme på markedet, men de
-        store, etablerede spillere på markedet holdt lidt igen. Pierre så det
+        gennem gymnasietiden. <br />
+        <br />
+        Pierre over til digital fotografering i starten af 2000’erne, da han
+        begyndte at studere fotografisk kommunikation på DMJX. Her åbnede en ny
+        verden sig: Reklamefotografering i studie, lyssætning og manipulering af
+        billeder i Photoshop blev hans nye stil. <br />
+        <br />
+        På det tidspunkt var stock-foto industrien i starten af en revolution:
+        De første online stock-foto websites begyndte at komme på markedet, men
+        de store, etablerede spillere på markedet holdt lidt igen. Pierre så det
         for sig: “Om ganske få år er hele branchen digital, og dem der ikke
-        hopper med på den digitale vogn, lukker.” Så Pierre gav sig selv en
-        udfordring: At blive landets bedst sælgende stock-fotograf. Pierre
-        lejede et gammelt, billigt erhvervslokale i Ishøj industri, fik fløjet
-        billige skuespillere ind fra Polen og Baltikum, og fotograferede 10
-        timer om dagen. Pierres profeti om stock-foto branchen holdt stik.
-        Pierre var allerede en af landets bedst sælgende stock-fotografer, før
-        han blev færdig med studiet på DMJX.
+        hopper med på den digitale vogn, lukker.” <br />
+        <br />
+        Så Pierre gav sig selv en udfordring: At blive landets bedst sælgende
+        stock-fotograf. Pierre lejede et gammelt, billigt erhvervslokale i Ishøj
+        industri, fik fløjet billige skuespillere ind fra Polen og Baltikum, og
+        fotograferede 10 timer om dagen. <br />
+        <br />
+        Pierres profeti om stock-foto branchen holdt stik. Pierre var allerede
+        en af landets bedst sælgende stock-fotografer, før han blev færdig med
+        studiet på DMJX.
       </p>
       <div>
-        <img src="billeder/arbejde.webp" alt="" />
-        <img src="billeder/arbejde-2.webp" alt="" />
-        <img src="billeder/godt-arbejde.webp" alt="" />
+        <figure class="mt-20 grid lg:mx-60 lg:grid-cols-3 lg:gap-5">
+          <img src="billeder/arbejde.webp" class="lg:mt-0" alt="" />
+          <img src="billeder/arbejde-2.webp" class="mt-10 lg:mt-0" alt="" />
+          <img src="billeder/godt-arbejde.webp" class="mt-10 lg:mt-0" alt="" />
+          <figcaption class="text-xs italic leading-5 text-white lg:col-span-3">
+            Billeder fra Reklamefotografering i studie, med lyssætning og
+            mapulering i Photoshop. <strong>Fotos: Pierre Falcke</strong>
+          </figcaption>
+        </figure>
       </div>
     </section>
 
-    <!-- section 5 tre faktabokse med dropshadow tre billeder "flyver" ind-->
+    <!-- section 5 skillevej tre faktabokse med dropshadow tre billeder "flyver" ind-->
 
     <section>
-      <img src="billeder/canon-eos-300-gammel-film.webp" alt="" />
-      <h2>En skillevej</h2>
-      <div>
-        <p>
-          Pierre tjente godt det følgende årti. Men stille og roligt begyndte
-          billederne også at give ham kvalme. Han kunne ikke holde sit eget
-          arbejde ud, og måtte finde et modsvar til alle de blankpolerede fotos.
-          Noget han kunne lave med stolthed. Pierre bestluttede sig for at
-          droppe stock-fotos, og vende tilbage til rødderne.
-        </p>
-        <p>
-          Han søgte inspiration i analog fotografering, i Lomo-bevægelsen,
-          Glitch art og polaroid fotografering, og begyndte stille og roligt at
-          skabe sig en ny stil - en stil med fokus på det uperfekte, og hvor der
-          er et uforudsigeligt element i det at tage billeder.
-        </p>
-        <p>
-          Pierre tog det endda så vidt at han ikke kun droppede at tage
-          stock-fotos. Han fjernede også alle stock-fotos fra de tjenester, han
-          solgte sine fotos hos. Han gik fra at være en god forretningsdrivende
-          til at blive en vaskeægte boheme-type på rekordtid.
-        </p>
-      </div>
+      <div class="bg-[url('/billeder/canon-eos-300-gammel-film.webp')]">
+        <div class="m-10 p-2">
+          <h2 class="m-20 flex justify-center lg:text-5xl">En skillevej</h2>
+          <div class="mt-5">
+            <!-- 1. billede og tekst animation -->
+            <p
+              class="bg-white p-10 font-semibold leading-8 drop-shadow-3xl sm:p-14 md:py-20 md:px-16 lg:mx-64 xl:mx-96"
+            >
+              Pierre tjente godt det følgende årti. Men stille og roligt
+              begyndte billederne også at give ham kvalme. Han kunne ikke holde
+              sit eget arbejde ud, og måtte finde et modsvar til alle de
+              blankpolerede fotos. Noget han kunne lave med stolthed. Pierre
+              bestluttede sig for at droppe stock-fotos, og vende tilbage til
+              rødderne.
+            </p>
+            <div class="slide-in-left-1">
+              <img
+                src="billeder/tynd-film.webp"
+                class="rotate-in-center-1 my-10 drop-shadow-3xl lg:mt-0 lg:max-w-sm"
+                alt="roterende billede 1"
+              />
+            </div>
 
-      <div>
-        <img src="billeder/tynd-film.webp" alt="" />
-        <img src="billeder/scan.webp" alt="" />
-        <img src="billeder/billigt-objektiv.webp" alt="" />
+            <!-- 2. billede og tekst animation -->
+            <p
+              class="bg-white p-10 font-semibold leading-8 drop-shadow-3xl sm:p-14 md:py-20 md:px-16 lg:mx-64 xl:mx-96"
+            >
+              Han søgte inspiration i analog fotografering, i Lomo-bevægelsen,
+              Glitch art og polaroid fotografering, og begyndte stille og roligt
+              at skabe sig en ny stil - en stil med fokus på det uperfekte, og
+              hvor der er et uforudsigeligt element i det at tage billeder.
+            </p>
+            <div class="slide-in-left-2">
+              <img
+                src="billeder/scan.webp"
+                class="rotate-in-center-2 my-10 drop-shadow-3xl lg:mt-0 lg:max-w-sm"
+                alt="roterende billede 2"
+              />
+            </div>
+
+            <!-- 3. billede og tekst animation -->
+            <p
+              class="bg-white p-10 font-semibold leading-8 drop-shadow-3xl sm:p-14 md:py-20 md:px-16 lg:mx-64 xl:mx-96"
+            >
+              Pierre tog det endda så vidt at han ikke kun droppede at tage
+              stock-fotos. Han fjernede også alle stock-fotos fra de tjenester,
+              han solgte sine fotos hos. Han gik fra at være en god
+              forretningsdrivende til at blive en vaskeægte boheme-type på
+              rekordtid.
+            </p>
+            <div class="slide-in-left-3">
+              <img
+                src="billeder/billigt-objektiv.webp"
+                class="rotate-in-center-3 my-10 drop-shadow-3xl lg:mt-0 lg:mb-20 lg:max-w-sm"
+                alt="roterende billede 3"
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-
     <!-- Section 6 video, tekst og citater -->
 
     <section>
@@ -190,7 +247,7 @@
       </div>
       <div class="relative m-10 p-2">
         <div>
-          <p class="mt-32 text-white lg:mx-96">
+          <p class="mt-10 text-white lg:mx-96">
             Men Pierre er glad for sin beslutning. Indkomsten er lavere nu, men
             han har stadig lidt penge på kontoen, og studerer nu
             kunstfotografering på fotoskolen Fatamorgana. Han glæder sig over
@@ -199,7 +256,7 @@
           </p>
         </div>
 
-        <div class="mt-32 lg:mx-60">
+        <div class="mt-24 lg:mx-60">
           <img
             class="h-10 w-10 md:h-16 md:w-16"
             src="billeder/citat_top.svg"
@@ -217,7 +274,7 @@
           />
         </div>
         <div>
-          <p class="mt-32 text-white lg:mx-96">
+          <p class="mt-24 text-white lg:mx-96">
             Karrieren begynder også så småt også at gå den rette vej: Pierre er
             begyndt at sælge fotokunst på nettet, og har udgivet sin første
             foto-bog med titlen “Lidt i fem,” som er en fotografisk odyssé om at
@@ -226,7 +283,7 @@
             Biblioteks fotoudstilling. Som Pierre forklarer det:
           </p>
         </div>
-        <div class="mt-32 lg:mx-60">
+        <div class="mt-24 lg:mx-60">
           <img
             class="h-10 w-10 md:h-16 md:w-16"
             src="billeder/citat_top.svg"
@@ -250,7 +307,7 @@
     <!-- section 7 tekst og billeder x3 kommer ind fra siderne og regler i listeform til sidst -->
 
     <section class="m-10 p-2 lg:mx-60">
-      <h2 class="my-32 text-white">Analog fotografering</h2>
+      <h2 class="mt-20 text-white">Analog fotografering</h2>
       <div class="mt-10 text-white lg:grid lg:grid-cols-2 lg:gap-20">
         <p class="textinview">
           Fotografering med gode, gammeldags filmruller. Analog fotografering
@@ -275,7 +332,7 @@
           />
         </div>
       </div>
-      <h2 class="mt-5 text-white lg:mt-10">Glitch art</h2>
+      <h2 class="mt-20 text-white">Glitch art</h2>
       <div class="mt-10 text-white lg:grid lg:grid-cols-2 lg:gap-20">
         <p class="textinview">
           Når der sker en teknisk fejl i et medie/en kommunikationskanal kaldes
@@ -291,7 +348,7 @@
           />
         </div>
       </div>
-      <h2 class="mt-5 text-white lg:mt-10">Lomografi</h2>
+      <h2 class="mt-20 text-white">Lomografi</h2>
       <div class="mt-10 text-white lg:grid lg:grid-cols-2 lg:gap-20">
         <p class="textinview">
           Et lomografi er egentlig bare et fotografi skudt uden videre omtanke,
@@ -310,7 +367,7 @@
         </div>
       </div>
       <div>
-        <h3 class="mt-5 text-white">Lomo-regler</h3>
+        <h3 class="mt-20 text-white">Lomo-regler</h3>
         <p class="mt-5 text-white">
           Der er et stort community af lomografer på Lomography.com, og hardcore
           lomografer har 10 regler, de lever efter:
@@ -367,6 +424,10 @@
         </p>
       </div>
     </footer>
+    <!-- lyd -->
+    <div>
+      <audio src="lyd/swoosh.mp3" id="swooshlyd"></audio>
+    </div>
     <script type="module" src="./main.js"></script>
   </body>
 </html>
