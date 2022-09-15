@@ -117,8 +117,8 @@ inView(".staggeranimation", ({ target }) => {
     target.querySelectorAll("li"),
     { opacity: [0, 1] },
     {
-      duration: 0.7,
-      delay: stagger(0.7, { start: 0.3 }),
+      duration: 0.8,
+      delay: stagger(0.8, { start: 0.25 }),
     }
   );
   return () => {
