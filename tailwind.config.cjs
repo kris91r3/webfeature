@@ -8,6 +8,7 @@ module.exports = {
       black: "#000002",
       grey: "#1d1e22",
       orange: "#FB7B33",
+      blue: "#111343",
     },
     extend: {
       dropShadow: {
